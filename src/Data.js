@@ -27,6 +27,7 @@ import work6 from "./assets/work6.png";
 import work7 from "./assets/work7.png";
 import work8 from "./assets/work8.png";
 import work9 from "./assets/work9.png";
+import work10 from "./assets/work10.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
