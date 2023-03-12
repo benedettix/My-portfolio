@@ -179,6 +179,14 @@ export const workImages = [
     category: "web",
     github: "https://github.com/benedettix/Online-SHOP-SInglepage-app",
   },
+
+  {
+    id: 10,
+    img: work10,
+    name: "project 10",
+    category: "web",
+    github: "https://github.com/benedettix/Employee-tasks-frontend",
+  },
 ];
 
 export const workNavs = ["All", "Web", "Mobile"];
