@@ -1,8 +1,7 @@
-import React from 'react'
-import portfolio from "../../../assets/portfolio.jpg"
-import "./Home.scss"
-import { motion } from 'framer-motion'
-
+import React from "react";
+import portfolio from "../../../assets/portfolio.jpg";
+import "./Home.scss";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const moveVariants = {
@@ -11,57 +10,47 @@ const Home = () => {
       transition: {
         yoyo: Infinity,
         duration: 2,
-        delay: 1
-      }
-
-    }
-  }
-
+        delay: 1,
+      },
+    },
+  };
 
   return (
-    <motion.div className="container " id='home'
+    <motion.div
+      className="container "
+      id="home"
       initial={{ y: -15, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={
-        {
-          duration: 2,
-          delay: 0.5
-        }
-      }
+      transition={{
+        duration: 2,
+        delay: 0.5,
+      }}
     >
       <div className="profile">
         <img src={portfolio} alt="portfolio" />
       </div>
       <div className="profile_text">
-        <h3 className='name'>Hi, I'm <span>Luka Benedetti</span> </h3>
-        <span className='job'>Web and Mobile developer</span>
-        <span className='text'>Passionate in <br></br> frontend development.</span>
+        <h3 className="name">
+          Hi, I'm <span>Luka Benedetti</span>{" "}
+        </h3>
+        <span className="job">Web developer</span>
+        <span className="text">
+          Passionate in <br></br> frontend development.
+        </span>
         <motion.a
-          href="#contact"
+          href="#portfolio"
           whileHover={{ scale: 1.1 }}
           variants={moveVariants}
           animate="animation"
         >
-          connect with me</motion.a>
-        <div
-          className="web"
+          My Projects
+        </motion.a>
+        <div className="web">Web Developer</div>
 
-        >
-          Web Developer
-        </div>
-        <div
-          className="ui"
-        >
-         Mobile Developer
-        </div>
-        <div
-          className="freelance"
-        >
-          Freelancer
-        </div>
+        <div className="freelance">Freelancer</div>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

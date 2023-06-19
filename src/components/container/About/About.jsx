@@ -1,18 +1,17 @@
-import React from 'react'
+import React from "react";
 import "./About.scss";
-import cv from "../../../assets/cv.pdf"
-import { motion } from 'framer-motion';
-import { bios } from '../../../Data';
-import portfolio from "../../../assets/portfolio.jpg"
+import cv from "../../../assets/cv.pdf";
+import { motion } from "framer-motion";
+import { bios } from "../../../Data";
+import portfolio from "../../../assets/portfolio.jpg";
 const About = () => {
-
-
   return (
-    <div className="container " id='about'>
+    <div className="container " id="about">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ y: [-50, 0], opacity: 1 }}
-        className="title">
+        className="title"
+      >
         <span>Who Am I?</span>
         <h1>About Me</h1>
       </motion.div>
@@ -22,39 +21,49 @@ const About = () => {
           initial={{ x: 0, opacity: 0 }}
           whileInView={{ x: [-250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
-          className="about_left">
-          <motion.img src={portfolio}
+          className="about_left"
+        >
+          <motion.img
+            src={portfolio}
             whileHover={{ y: -48, x: -55 }}
             transition={{ duration: 0.3 }}
           />
         </motion.div>
-        <motion.div className="about_right"
+        <motion.div
+          className="about_right"
           initial={{ x: 0, opacity: 0 }}
           whileInView={{ x: [250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
         >
-
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae at rem, tenetur ad ipsa sequi, optio eius laudantium vero minus maxime laborum est et nemo consequatur nostrum distinctio sed, nulla doloribus officiis ea eligendi explicabo.</p>
-          {bios.map(bio => {
+          <p>
+            I am a self-motivated programmer with a strong drive to succeed. I
+            am passionate about coding and continuously strive to enhance my
+            skills and knowledge in the field. I believe in setting high goals
+            for myself and working diligently to achieve them.
+          </p>
+          {bios.map((bio) => {
             return (
               <div className="bio" key={bio.id}>
-                <span className='bioKey'>{bio.icon}{bio.key}</span>
-                <span className='bioValue'>{bio.value}</span>
+                <span className="bioKey">
+                  {bio.icon}
+                  {bio.key}
+                </span>
+                <span className="bioValue">{bio.value}</span>
               </div>
-            )
+            );
           })}
-          <motion.a href={cv} download
+          <motion.a
+            href={cv}
+            download
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >
             Download Resume
           </motion.a>
         </motion.div>
-
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -28,6 +28,7 @@ import work7 from "./assets/work7.png";
 import work8 from "./assets/work8.png";
 import work9 from "./assets/work9.png";
 import work10 from "./assets/work10.png";
+import work11 from "./assets/work11.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -118,79 +119,88 @@ export const workImages = [
     img: work1,
     name: "project 1",
     category: "web",
-    url: "https://moder-quiz-app.netlify.app/index.html",
-    github: "https://github.com/benedettix/Modern-Quizz",
+    url: "https://onlinewebshopluka.000webhostapp.com/",
+    github: "private",
+    fire: true,
   },
   {
     id: 2,
     img: work2,
     name: "project 2",
     category: "web",
-    url: "https://sambo-website.netlify.app/",
-    github: "https://github.com/benedettix/Sambo-app",
+    url: "https://moder-quiz-app.netlify.app/index.html",
+    github: "https://github.com/benedettix/Modern-Quizz",
   },
   {
     id: 3,
     img: work3,
     name: "project 3",
     category: "web",
-    url: "https://watch-shop-benyx.netlify.app/",
-    github: "https://github.com/benedettix/Benyx-shop",
+    url: "https://sambo-website.netlify.app/",
+    github: "https://github.com/benedettix/Sambo-app",
   },
   {
     id: 4,
     img: work4,
     name: "project 4",
     category: "web",
-    url: "https://uservision-site.netlify.app/",
-    github: "https://github.com/benedettix/Uservision-Landing-Page",
+    url: "https://watch-shop-benyx.netlify.app/",
+    github: "https://github.com/benedettix/Benyx-shop",
   },
   {
     id: 5,
     img: work5,
     name: "project 5",
     category: "web",
-    github: "https://github.com/benedettix/Felib-Map",
+    url: "https://uservision-site.netlify.app/",
+    github: "https://github.com/benedettix/Uservision-Landing-Page",
   },
   {
     id: 6,
     img: work6,
     name: "project 6",
     category: "web",
-    github: "https://github.com/benedettix/Youtube-Copy-app",
+    github: "https://github.com/benedettix/Felib-Map",
   },
   {
     id: 7,
     img: work7,
     name: "project 7",
     category: "web",
-    github: "https://github.com/benedettix/Netflix-copy-app",
+    github: "https://github.com/benedettix/Youtube-Copy-app",
   },
   {
     id: 8,
     img: work8,
     name: "project 8",
-    category: "mobile",
-    github: "https://github.com/benedettix/Food-React-native-app",
+    category: "web",
+    github: "https://github.com/benedettix/Netflix-copy-app",
   },
   {
     id: 9,
     img: work9,
     name: "project 9",
     category: "web",
-    github: "https://github.com/benedettix/Online-SHOP-SInglepage-app",
+    github: "https://github.com/benedettix/Food-React-native-app",
   },
-
   {
     id: 10,
     img: work10,
     name: "project 10",
     category: "web",
+    github: "https://github.com/benedettix/Online-SHOP-SInglepage-app",
+  },
+
+  {
+    id: 11,
+    img: work11,
+    name: "project 11",
+    category: "web",
     github: "https://github.com/benedettix/Employee-tasks-frontend",
   },
 ];
 
-export const workNavs = ["All", "Web", "Mobile"];
+export const workNavs = ["All", "Web"];
 
 export const contacts = [
   {
