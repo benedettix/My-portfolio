@@ -125,7 +125,7 @@ export const workImages = [
   },
   {
     id: 2,
-    img: work2,
+    img: work11,
     name: "project 2",
     category: "web",
     url: "https://moder-quiz-app.netlify.app/index.html",
@@ -133,7 +133,7 @@ export const workImages = [
   },
   {
     id: 3,
-    img: work3,
+    img: work2,
     name: "project 3",
     category: "web",
     url: "https://sambo-website.netlify.app/",
@@ -141,7 +141,7 @@ export const workImages = [
   },
   {
     id: 4,
-    img: work4,
+    img: work3,
     name: "project 4",
     category: "web",
     url: "https://watch-shop-benyx.netlify.app/",
@@ -149,7 +149,7 @@ export const workImages = [
   },
   {
     id: 5,
-    img: work5,
+    img: work4,
     name: "project 5",
     category: "web",
     url: "https://uservision-site.netlify.app/",
@@ -157,35 +157,35 @@ export const workImages = [
   },
   {
     id: 6,
-    img: work6,
+    img: work5,
     name: "project 6",
     category: "web",
     github: "https://github.com/benedettix/Felib-Map",
   },
   {
     id: 7,
-    img: work7,
+    img: work6,
     name: "project 7",
     category: "web",
     github: "https://github.com/benedettix/Youtube-Copy-app",
   },
   {
     id: 8,
-    img: work8,
+    img: work7,
     name: "project 8",
     category: "web",
     github: "https://github.com/benedettix/Netflix-copy-app",
   },
   {
     id: 9,
-    img: work9,
+    img: work8,
     name: "project 9",
     category: "web",
     github: "https://github.com/benedettix/Food-React-native-app",
   },
   {
     id: 10,
-    img: work10,
+    img: work9,
     name: "project 10",
     category: "web",
     github: "https://github.com/benedettix/Online-SHOP-SInglepage-app",
@@ -193,7 +193,7 @@ export const workImages = [
 
   {
     id: 11,
-    img: work11,
+    img: work10,
     name: "project 11",
     category: "web",
     github: "https://github.com/benedettix/Employee-tasks-frontend",

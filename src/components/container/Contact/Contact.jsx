@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.scss";
-import { contacts } from "../../../Data";
+import { contacts, urls } from "../../../Data";
 import { socialIcons } from "../../../Data";
 import { motion } from "framer-motion";
 
@@ -35,8 +35,17 @@ const Contact = () => {
             );
           })}
           <div className="social_icons">
-            {socialIcons.map((socialIcon, index) => {
-              return <div key={index}>{socialIcon}</div>;
+            {socialIcons.map((socialIcon, i) => {
+              return (
+                <a
+                  target="_blank"
+                  style={{ fontSize: "30px" }}
+                  href={urls[i]}
+                  key={i}
+                >
+                  {socialIcon}
+                </a>
+              );
             })}
           </div>
         </motion.div>
