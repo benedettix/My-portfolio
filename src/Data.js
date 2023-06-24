@@ -207,9 +207,4 @@ export const contacts = [
     icon: <FaPaperPlane />,
     infoText: "benedetiluka@gmail.com",
   },
-  {
-    id: 3,
-    icon: <FaPhoneAlt />,
-    infoText: "+381616087587",
-  },
 ];
