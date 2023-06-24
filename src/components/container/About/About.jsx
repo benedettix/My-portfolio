@@ -52,14 +52,14 @@ const About = () => {
               </div>
             );
           })}
-          <motion.a
+          {/* <motion.a
             href={cv}
             download
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >
             Download Resume
-          </motion.a>
+          </motion.a> */}
         </motion.div>
       </div>
     </div>
