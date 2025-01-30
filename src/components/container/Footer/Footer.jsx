@@ -14,10 +14,7 @@ const Footer = () => {
       className="footer"
     >
       <div className="copyright">
-        <p>
-          Copyright&copy;2023 All rights reserved.Made by{" "}
-          <span>Luka Benedetti</span>
-        </p>
+        <p>Copyright &copy; 2025. All rights reserved. Made by Luka Benedetti</p>
       </div>
       <div className="followMe">
         <h4>Follow Me</h4>

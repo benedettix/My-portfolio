@@ -4,20 +4,22 @@ import {
   FaNodeJs,
   FaReact,
   FaSass,
-  FaFigma,
-  FaPhoneAlt,
+
   FaUser,
   FaMapMarkerAlt,
   FaPaperPlane,
-  FaDribbble,
+
   FaInstagram,
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
-import { BsMedium } from "react-icons/bs";
-import portfolio from "./assets/portfolio.jpg";
+import { TbBrandReactNative } from "react-icons/tb";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { RiSupabaseFill } from "react-icons/ri";
+
 import work1 from "./assets/work1.png";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
@@ -32,7 +34,7 @@ import work11 from "./assets/work11.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
-export const socialIcons = [<FaInstagram />, <FaLinkedin />, <FaGithub />];
+export const socialIcons = [<FaInstagram color="black" />, <FaLinkedin color="black" />, <FaGithub color="black" />];
 export const urls = [
   "https://www.instagram.com/luka.benedetti/",
   "https://www.linkedin.com/in/luka-benedetti-66594b172/",
@@ -43,52 +45,58 @@ export const bios = [
   {
     id: 1,
     icon: <FaUser />,
-    key: "Luka",
-    value: "Benedetti",
+    key: "Luka Benedetti",
+    value: "",
   },
   {
     id: 2,
     icon: <FaPaperPlane />,
-    key: "Email",
-    value: "benedetiluka@gmail.com",
+    key: "benedetiluka@gmail.com",
+    value: "",
   },
 ];
 
 export const icons = [
-  <FaHtml5 />,
-  <FaCss3 />,
+  <SiMongodb />,
+  <RiSupabaseFill />,
   <DiJavascript />,
   <SiTypescript />,
   <FaReact />,
   <FaNodeJs />,
-  <FaSass />,
-  <FaReact />,
+  <RiNextjsFill />,
+  <TbBrandReactNative />,
 ];
 
 export const experiences = [
   {
     id: 1,
-    year: "2021",
-    position: "DaniloVesovic Course Mentorship",
-    company: "danilovesovic.com",
+    year: "2021-2022",
+    position: "Frontend Developer",
+    company: "Fiverr & Upwork",
   },
   {
     di: 2,
-    year: "2022",
-    position: "Freelancing",
-    company: "upwork.com",
+    year: "2023",
+    position: "Full-stack developer",
+    company: "The Darkstar soft",
   },
   {
     id: 3,
-    year: "2019-2023",
-    position: "Udemy Courses & Youtube videos",
-    company: "yt.com&udemy.com",
+    year: "2024-Now",
+    position: "Full-stack Developer",
+    company: "Loy Digital AG",
+  },
+  {
+    id: 4,
+    year: "2024-Now",
+    position: "Full-stack Developer",
+    company: "Emissium",
   },
 ];
 export const finishes = [
   {
     id: 1,
-    number: "2",
+    number: "3+",
     itemName: "Years Of Experience",
   },
   {
@@ -110,73 +118,66 @@ export const finishes = [
 export const workImages = [
   {
     id: 1,
-    img: work1,
+    img: work6,
     name: "project 1",
     category: "web",
-    url: "https://onlinewebshopluka.000webhostapp.com/",
+    url: "https://v2-demo.loy.ch/",
     github: "private",
     fire: true,
   },
   {
     id: 2,
-    img: work11,
+    img: work4,
     name: "project 2",
     category: "web",
-    url: "https://moder-quiz-app.netlify.app/index.html",
-    github: "https://github.com/benedettix/Modern-Quizz",
+    url: "https://test.api.emissium.io/",
+    github: "private",
+    fire: true,
   },
   {
     id: 3,
-    img: work2,
+    img: work5,
     name: "project 3",
     category: "web",
-    url: "https://sambo-website.netlify.app/",
-    github: "https://github.com/benedettix/Sambo-app",
+    // url: "",
+    github: "",
+    fire: true,
   },
   {
     id: 4,
-    img: work3,
+    img: work7,
     name: "project 4",
-    category: "web",
-    url: "https://watch-shop-benyx.netlify.app/",
-    github: "https://github.com/benedettix/Benyx-shop",
+    category: "mobile",
+    url: "https://notepad.pw/share/s9pqPDd3BBmh2N8Y8if9",
+    github: "private",
+    fire: true,
   },
-  {
-    id: 5,
-    img: work4,
-    name: "project 5",
-    category: "web",
-    url: "https://uservision-site.netlify.app/",
-    github: "https://github.com/benedettix/Uservision-Landing-Page",
-  },
+
   {
     id: 6,
-    img: work5,
+    img: work2,
     name: "project 6",
     category: "web",
-    github: "https://github.com/benedettix/Felib-Map",
+    url: "https://sambo-website.netlify.app/",
+    github: "private",
   },
   {
     id: 7,
-    img: work6,
+    img: work1,
     name: "project 7",
     category: "web",
+    url: "https://onlinewebshopluka.000webhostapp.com/",
     github: "https://github.com/benedettix/Youtube-Copy-app",
   },
   {
     id: 8,
-    img: work7,
+    img: work3,
     name: "project 8",
     category: "web",
+    url: "https://watch-shop-benyx.netlify.app/",
     github: "https://github.com/benedettix/Netflix-copy-app",
   },
-  {
-    id: 9,
-    img: work8,
-    name: "project 9",
-    category: "web",
-    github: "https://github.com/benedettix/Food-React-native-app",
-  },
+
   {
     id: 10,
     img: work9,
@@ -185,16 +186,10 @@ export const workImages = [
     github: "https://github.com/benedettix/Online-SHOP-SInglepage-app",
   },
 
-  {
-    id: 11,
-    img: work10,
-    name: "project 11",
-    category: "web",
-    github: "https://github.com/benedettix/Employee-tasks-frontend",
-  },
+
 ];
 
-export const workNavs = ["All", "Web"];
+export const workNavs = ["All", "Web", "Mobile"];
 
 export const contacts = [
   {

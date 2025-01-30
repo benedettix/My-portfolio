@@ -28,27 +28,15 @@ const Portfolio = () => {
 
   return (
     <div className="container" id="portfolio">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }}
-        className="title"
-      >
+      <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-50, 0], opacity: 1 }} className="title">
         <span>My Work</span>
         <h1>Awesome Projects</h1>
         <p style={{ color: "white" }}>🔥 = My best projects</p>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }}
-        className="buttons"
-      >
+      <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-50, 0], opacity: 1 }} className="buttons">
         {workNavs.map((workNav, index) => {
           return (
-            <button
-              onClick={(e) => activeTab(e, index)}
-              className={`${active === index ? "active" : ""}`}
-              key={index}
-            >
+            <button onClick={(e) => activeTab(e, index)} className={`${active === index ? "active" : ""}`} key={index}>
               {workNav}
             </button>
           );
@@ -72,7 +60,7 @@ const Portfolio = () => {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="hoverLayer"
               >
-                <motion.a
+                {/* <motion.a
                   target="_blank"
                   href={work?.github}
                   whileInView={{ scale: [0, 1] }}
@@ -80,7 +68,7 @@ const Portfolio = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <FiGithub />
-                </motion.a>
+                </motion.a> */}
 
                 <motion.a
                   target="_blank"
@@ -107,11 +95,7 @@ const Portfolio = () => {
             so let's talk about <br /> <span>your next projects</span>
           </h3>
         </div>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-          className="talk_right"
-        >
+        <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }} className="talk_right">
           <a href="#contact">Contact Me</a>
         </motion.div>
       </motion.div>

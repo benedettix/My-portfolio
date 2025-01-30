@@ -33,11 +33,12 @@ const Home = () => {
         <h3 className="name">
           Hi, I'm <span>Luka Benedetti</span>{" "}
         </h3>
-        <span className="job">Web developer</span>
+        <span className="job">Full-stack developer</span>
         <span className="text">
-          Passionate in <br></br> frontend development.
+          Passionate in <br></br> full-stack development.
         </span>
         <motion.a
+          className="my-projects"
           href="#portfolio"
           whileHover={{ scale: 1.1 }}
           variants={moveVariants}
@@ -47,7 +48,7 @@ const Home = () => {
         </motion.a>
         <div className="web">Web Developer</div>
 
-        <div className="freelance">Freelancer</div>
+        <div className="freelance">Mobile developer</div>
       </div>
     </motion.div>
   );
